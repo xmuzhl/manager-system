@@ -1,18 +1,22 @@
 package com.example.demo;
 
+
 import com.example.demo.controller.AdminController;
 import com.example.demo.controller.UserController;
 import com.example.demo.pojo.User;
 import com.example.demo.pojo.UserResource;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Arrays;
 
-@SpringBootTest
-class DemoApplicationTests {
 
+@SpringBootTest
+@RunWith(SpringRunner.class)
+public class DemoTest {
     @Autowired
     UserController userController;
 
